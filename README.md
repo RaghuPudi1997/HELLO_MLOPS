@@ -1,12 +1,13 @@
 # HELLO_MLOPS
 This repository serves as a lightweight, production-ready template for MLOps. It demonstrates how to bridge the gap between a raw Python script and a containerized microservice with automated CI/CD.
 The project is structured to ensure that model training, evaluation, and deployment are decoupled yet reproducible.
+
 **Components and WorkFlow:**
 
 Traning and Artifacts (train.py):
 Running the training script generates a versioned artifacts/ directory:
 ->model.pkl: The serialized scikit-learn model ready for production.
-->metrics.json: Key performance indicators (KPIs) used for model auditing and CI/CD gatekeeping.
+->metrics.json: Key performance indicators used for model auditing and CI/CD gatekeeping.
 
 The Inference Layer:
 Provided two ways to interact with the trained model:
